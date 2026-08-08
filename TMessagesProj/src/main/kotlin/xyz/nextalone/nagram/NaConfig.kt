@@ -472,6 +472,18 @@ object NaConfig {
             ConfigItem.configTypeBool,
             false
         )
+    val messagePrefix =
+        addConfig(
+            "MessagePrefix",
+            ConfigItem.configTypeString,
+            ""
+        )
+    val messageSuffix =
+        addConfig(
+            "MessageSuffix",
+            ConfigItem.configTypeString,
+            ""
+        )
     val searchHashtagDefaultPageChannel =
         addConfig(
             "SearchHashtagDefaultPageChannel",
