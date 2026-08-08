@@ -65,6 +65,11 @@
     <string name="NoiseSuppressAndVoiceEnhance">تحسينات الصوت</string>
     <string name="RepeatAsCopy">إعادة نشر كنسخة</string>
     <string name="DoubleTapAction">إجراءات النقر المزدوج</string>
+    <string name="MessageActions">إجراءات الرسالة</string>
+    <string name="MessagePrefixTitle">نص البداية</string>
+    <string name="MessageSuffixTitle">نص النهاية</string>
+    <string name="MessagePrefixHint">مثال: ** أو [ابدأ]</string>
+    <string name="MessageSuffixHint">مثال: ** أو [انتهى]</string>
     <string name="CustomTitleHint">اتركه فارغاً لاستخدام آراس كرام</string>
     <string name="NeedChangeNekoSettings">تحتاج إلى تغيير إعدادات ميرو</string>
     <string name="EnableSaveDeletedMessages">حفظ الرسائل المحذوفة</string>
