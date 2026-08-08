@@ -161,6 +161,11 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
     private final AbstractConfigCell doubleTapActionOutRow = cellGroup.appendCell(new ConfigCellCustom("DoubleTapOutgoing", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
     private final AbstractConfigCell dividerDoubleTap = cellGroup.appendCell(new ConfigCellDivider());
 
+    // Message Actions (إجراءات الرسالة)
+    private final AbstractConfigCell headerMessageActions = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.MessageActions)));
+    private final AbstractConfigCell messagePrefixRow = cellGroup.appendCell(new ConfigCellTextInput(null, NaConfig.INSTANCE.getMessagePrefix(), getString(R.string.MessagePrefixHint), null));
+    private final AbstractConfigCell messageSuffixRow = cellGroup.appendCell(new ConfigCellTextInput(null, NaConfig.INSTANCE.getMessageSuffix(), getString(R.string.MessageSuffixHint), null));
+    private final AbstractConfigCell dividerMessageActions = cellGroup.appendCell(new ConfigCellDivider());
     // Camera
     private final AbstractConfigCell headerCamera = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.CameraSettings)));
     private final AbstractConfigCell disableInstantCameraRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.disableInstantCamera));
