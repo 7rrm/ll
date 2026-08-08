@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">إعدادات ميرو</string>
+    <string name="NekoSettings">إعدادات آراس</string>
     <string name="IPv6">تفضيل IPv6</string>
     <string name="MessageMenu">قائمة الرسالة</string>
     <string name="HidePhone">إخفاء رقم الهاتف</string>
@@ -54,18 +54,18 @@
     <string name="UserRestrictionsSendGifs">إرسال صور GIF</string>
     <string name="CheckAllAdministrated">إضافة المُدارة</string>
     <string name="RearVideoMessages">الكاميرا الخلفية في رسائل الفيديو</string>
-    <string name="OfficialChannel">قناة ميرو إكس</string>
-    <string name="UnknownNekoSettingsOption">لا يوجد خيار كهذا في إعدادات ميرو</string>
-    <string name="PasscodeShowInSettings">إظهار في إعدادات ميرو</string>
-    <string name="CloudConfigDesc">احفظ إعدادات ميرو في سحابة تيليجرام.</string>
-    <string name="CloudConfigAutoSyncDesc">المزامنة تلقائياً مع السحابة بعد تغيير إعدادات ميرو.</string>
+    <string name="OfficialChannel">قناة آراس</string>
+    <string name="UnknownNekoSettingsOption">لا يوجد خيار كهذا في إعدادات آراس كرام</string>
+    <string name="PasscodeShowInSettings">إظهار في إعدادات آراس</string>
+    <string name="CloudConfigDesc">احفظ إعدادات آراس في سحابة تيليجرام.</string>
+    <string name="CloudConfigAutoSyncDesc">المزامنة تلقائياً مع السحابة بعد تغيير إعدادات آراس كرام.</string>
     <string name="N_Config">إعدادات متقدمة</string>
     <string name="CombineMessage">دمج الرسائل</string>
     <string name="TextStyle">نمط النص</string>
     <string name="NoiseSuppressAndVoiceEnhance">تحسينات الصوت</string>
     <string name="RepeatAsCopy">إعادة نشر كنسخة</string>
     <string name="DoubleTapAction">إجراءات النقر المزدوج</string>
-    <string name="CustomTitleHint">اتركه فارغاً لاستخدام ميرو إكس</string>
+    <string name="CustomTitleHint">اتركه فارغاً لاستخدام آراس كرام</string>
     <string name="NeedChangeNekoSettings">تحتاج إلى تغيير إعدادات ميرو</string>
     <string name="EnableSaveDeletedMessages">حفظ الرسائل المحذوفة</string>
     <string name="DeletedMessage">محذوفة</string>
