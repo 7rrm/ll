@@ -137,7 +137,7 @@ public final class MeeroStrings {
         put("MeeroGroupStorage", "Storage", "التخزين");
         put("MeeroHeaderEdit", "Edit", "تحرير");
         put("MeeroHeroMsg1", "Hey 👋 how are you?", "مرحبا 👋 شلونك؟");
-        put("MeeroHeroMsg2", "Did you try the new Meero design?", "هلا والله! جرّبت تصميم ميرو الجديد؟");
+        put("MeeroHeroMsg2", "Did you try the new Meero design?", "هلا والله! جرّبت تصميم آراس كرام الجديد؟");
         put("MeeroHeroMsg3", "Wooow fire 🔥", "وااو ناريي 🔥");
         put("MeeroHiddenChats", "Hidden chats", "المحادثات المخفية");
         put("MeeroHunterClearConfirm", "Delete the whole log?", "تمسح السجل كله؟");
