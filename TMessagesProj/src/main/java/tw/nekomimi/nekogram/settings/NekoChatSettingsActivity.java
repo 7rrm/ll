@@ -666,7 +666,11 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
             TranscribeHelper.showGeminiApiKeyDialog(this);
         } else if (position == cellGroup.rows.indexOf(transcribeProviderOpenAiRow)) {
             TranscribeHelper.showOpenAiCredentialsDialog(this);
-        }
+        } else if (position == cellGroup.rows.indexOf(messagePrefixRow)) {
+            showTextInputDialog(getString(R.string.MessagePrefixTitle), NaConfig.INSTANCE.getMessagePrefix(), messagePrefixRow);
+        } else if (position == cellGroup.rows.indexOf(messageSuffixRow)) {
+            showTextInputDialog(getString(R.string.MessageSuffixTitle), NaConfig.INSTANCE.getMessageSuffix(), messageSuffixRow);
+       }
     }
 
     @Override
@@ -807,7 +811,11 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
                     textCell.setTextAndValue(getString(R.string.LlmProviderGeminiKey), "", true);
                 } else if (position == cellGroup.rows.indexOf(transcribeProviderOpenAiRow)) {
                     textCell.setTextAndValue(getString(R.string.TranscribeProviderOpenAI), "", true);
-                }
+                } else if (position == cellGroup.rows.indexOf(messagePrefixRow)) {
+                    textCell.setTextAndValue(getString(R.string.MessagePrefixTitle), NaConfig.INSTANCE.getMessagePrefix().String(), true);
+                } else if (position == cellGroup.rows.indexOf(messageSuffixRow)) {
+                    textCell.setTextAndValue(getString(R.string.MessageSuffixTitle), NaConfig.INSTANCE.getMessageSuffix().String(), true);
+            }
             } else if (holder.itemView instanceof EmojiSetCell v1) {
                 v1.setData(EmojiHelper.getInstance().getCurrentEmojiPackInfo(), false, true);
             }
