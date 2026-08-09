@@ -163,8 +163,8 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
 
     // Message Actions (إجراءات الرسالة)
     private final AbstractConfigCell headerMessageActions = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.MessageActions)));
-    private final AbstractConfigCell messagePrefixRow = cellGroup.appendCell(new ConfigCellTextInput(null, NaConfig.INSTANCE.getMessagePrefix(), getString(R.string.MessagePrefixHint), null));
-    private final AbstractConfigCell messageSuffixRow = cellGroup.appendCell(new ConfigCellTextInput(null, NaConfig.INSTANCE.getMessageSuffix(), getString(R.string.MessageSuffixHint), null));
+    private final AbstractConfigCell messagePrefixRow = cellGroup.appendCell(new ConfigCellCustom("MessagePrefix", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
+    private final AbstractConfigCell messageSuffixRow = cellGroup.appendCell(new ConfigCellCustom("MessageSuffix", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
     private final AbstractConfigCell dividerMessageActions = cellGroup.appendCell(new ConfigCellDivider());
     // Camera
     private final AbstractConfigCell headerCamera = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.CameraSettings)));
