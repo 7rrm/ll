@@ -14,7 +14,6 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
@@ -50,7 +49,6 @@ import java.util.stream.Collectors;
 
 import kotlin.Unit;
 import tw.nekomimi.nekogram.NekoConfig;
-import tw.nekomimi.nekogram.config.ConfigItem;
 import tw.nekomimi.nekogram.config.CellGroup;
 import tw.nekomimi.nekogram.config.cell.AbstractConfigCell;
 import tw.nekomimi.nekogram.config.cell.ConfigCellCheckBox;
@@ -163,11 +161,6 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
     private final AbstractConfigCell doubleTapActionOutRow = cellGroup.appendCell(new ConfigCellCustom("DoubleTapOutgoing", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
     private final AbstractConfigCell dividerDoubleTap = cellGroup.appendCell(new ConfigCellDivider());
 
-    // Message Actions (إجراءات الرسالة)
-    private final AbstractConfigCell headerMessageActions = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.MessageActions)));
-    private final AbstractConfigCell messagePrefixRow = cellGroup.appendCell(new ConfigCellCustom("MessagePrefix", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
-    private final AbstractConfigCell messageSuffixRow = cellGroup.appendCell(new ConfigCellCustom("MessageSuffix", CellGroup.ITEM_TYPE_TEXT_SETTINGS_CELL, true));
-    private final AbstractConfigCell dividerMessageActions = cellGroup.appendCell(new ConfigCellDivider());
     // Camera
     private final AbstractConfigCell headerCamera = cellGroup.appendCell(new ConfigCellHeader(getString(R.string.CameraSettings)));
     private final AbstractConfigCell disableInstantCameraRow = cellGroup.appendCell(new ConfigCellTextCheck(NekoConfig.disableInstantCamera));
@@ -668,27 +661,7 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
             TranscribeHelper.showGeminiApiKeyDialog(this);
         } else if (position == cellGroup.rows.indexOf(transcribeProviderOpenAiRow)) {
             TranscribeHelper.showOpenAiCredentialsDialog(this);
-        } else if (position == cellGroup.rows.indexOf(messagePrefixRow)) {
-            showTextInputDialog(getString(R.string.MessagePrefixTitle), NaConfig.INSTANCE.getMessagePrefix(), messagePrefixRow);
-        } else if (position == cellGroup.rows.indexOf(messageSuffixRow)) {
-            showTextInputDialog(getString(R.string.MessageSuffixTitle), NaConfig.INSTANCE.getMessageSuffix(), messageSuffixRow);
-       }
-    }
-
-    private void showTextInputDialog(String title, ConfigItem configItem, AbstractConfigCell row) {
-        Context context = getParentActivity();
-        if (context == null) return;
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(title);
-        final EditText editText = new EditText(context);
-        editText.setText(configItem.String());
-        builder.setView(editText);
-        builder.setPositiveButton(getString(R.string.Save), (dialog, which) -> {
-            configItem.setConfigString(editText.getText().toString().trim());
-            listAdapter.notifyItemChanged(cellGroup.rows.indexOf(row));
-        });
-        builder.setNegativeButton(getString(R.string.Cancel), null);
-        builder.show();
+        }
     }
 
     @Override
@@ -829,11 +802,7 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
                     textCell.setTextAndValue(getString(R.string.LlmProviderGeminiKey), "", true);
                 } else if (position == cellGroup.rows.indexOf(transcribeProviderOpenAiRow)) {
                     textCell.setTextAndValue(getString(R.string.TranscribeProviderOpenAI), "", true);
-                } else if (position == cellGroup.rows.indexOf(messagePrefixRow)) {
-                    textCell.setTextAndValue(getString(R.string.MessagePrefixTitle), NaConfig.INSTANCE.getMessagePrefix().String(), true);
-                } else if (position == cellGroup.rows.indexOf(messageSuffixRow)) {
-                    textCell.setTextAndValue(getString(R.string.MessageSuffixTitle), NaConfig.INSTANCE.getMessageSuffix().String(), true);
-            }
+                }
             } else if (holder.itemView instanceof EmojiSetCell v1) {
                 v1.setData(EmojiHelper.getInstance().getCurrentEmojiPackInfo(), false, true);
             }
