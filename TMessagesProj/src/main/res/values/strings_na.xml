@@ -111,9 +111,4 @@
     <string name="VideoPlayerDecoderPreferSW">Prefer SW</string>
     <string name="VideoPlayerDecoderHardware">HW Only</string>
     <string name="VideoPlayerDecoderPreferHW">Prefer HW</string>
-    <string name="MessageActions">Message Actions</string>
-    <string name="MessagePrefixTitle">Prefix Text</string>
-    <string name="MessageSuffixTitle">Suffix Text</string>
-    <string name="MessagePrefixHint">e.g. ** or [START]</string>
-    <string name="MessageSuffixHint">e.g. ** or [END]</string>
 </resources>
