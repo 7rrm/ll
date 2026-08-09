@@ -673,6 +673,22 @@ public class NekoChatSettingsActivity extends BaseNekoXSettingsActivity implemen
        }
     }
 
+    private void showTextInputDialog(String title, ConfigItem configItem, AbstractConfigCell row) {
+        Context context = getParentActivity();
+        if (context == null) return;
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        final EditText editText = new EditText(context);
+        editText.setText(configItem.String());
+        builder.setView(editText);
+        builder.setPositiveButton(getString(R.string.Save), (dialog, which) -> {
+            configItem.setConfigString(editText.getText().toString().trim());
+            listAdapter.notifyItemChanged(cellGroup.rows.indexOf(row));
+        });
+        builder.setNegativeButton(getString(R.string.Cancel), null);
+        builder.show();
+    }
+
     @Override
     protected void onCheckBoxCellClick(View view, int position) {
         AbstractConfigCell a = cellGroup.rows.get(position);
