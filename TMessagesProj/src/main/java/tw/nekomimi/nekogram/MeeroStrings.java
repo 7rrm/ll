@@ -127,7 +127,7 @@ public final class MeeroStrings {
         put("MeeroGhostSwipeReadInfo", "\"Don't read messages\" hides read receipts from everyone, but sometimes you want one person to know you read their chat: enable this, swipe that chat in the dialogs list, and its receipt is sent alone while everything else stays hidden. One requirement: the swipe action must be Read - set it in the Chat swipe action row above, or in Settings - Chat Settings - Chat list swipe gesture. When off, ghost mode behaves exactly like the stock fork.", "خيار «عدم قراءة الرسائل» يحجب إيصالات القراءة عن الكل، لكن أحياناً تريد أن يعرف شخصٌ واحد أنك قرأت: فعّل هذا الخيار واسحب تلك المحادثة في قائمة الدردشات فيصلها وحدها إيصال قراءة حقيقي، والباقي يبقى مخفياً. شرط واحد: إجراء السحب لازم يكون «مقروءة» — تضبطه من صف «ضبط إجراء السحب» في الأعلى، أو من: الإعدادات ← إعدادات المحادثات ← «إجراءات السحْب لقائمة المحادثات». عند الإطفاء يرجع الشبح لسلوك الفورك الرسمي بالضبط.");
         put("MeeroGhostSwipeReadNeedRead", "For ghost swipe-read to work, the swipe action must be Read - set it in the Chat swipe action row above.", "لتعمل القراءة الشبحية بالسحب لازم إجراء السحب يكون «مقروءة» — اضبطه من صف «ضبط إجراء السحب» بالأعلى.");
         put("MeeroGlassBordersInfo", "A hairline outline on menus, panels and the search field.", "خط رفيع حول القوائم واللوحات وحقل البحث.");
-        put("MeeroGlassSettingsInfo", "A fixed exclusive skin for Meero settings: frosted glass with a soft glow. It ignores Telegram themes completely and only follows day/night mode.", "جلد ثابت حصري لإعدادات آراس كرام: زجاج شفاف بتوهّج هادئ. لا يتأثر بثيمات تيليجرام نهائياً ويتبدّل مع الوضع الليلي/النهاري فقط.");
+        put("MeeroGlassSettingsInfo", "A fixed exclusive skin for Meero settings: frosted glass with a soft glow. It ignores Telegram themes completely and only follows day/night mode.", "جلد ثابت حصري لإعدادات ميرو: زجاج شفاف بتوهّج هادئ. لا يتأثر بثيمات تيليجرام نهائياً ويتبدّل مع الوضع الليلي/النهاري فقط.");
         put("MeeroGlassSwitchesInfo", "Switches drawn exactly like the preview mock: a 48x28 pill that fills with a rose-to-violet gradient and a soft rose glow when on, a white knob that stretches under your finger, and 280ms springy motion. Off keeps the stock switch.", "سويتشات مطابقة لموقع المعاينة: حبة 48×28 تمتلئ بتدرّج وردي إلى بنفسجي مع توهّج وردي ناعم عند التشغيل، وكرة بيضاء تتمدد تحت إصبعك، وحركة نابضة 280ms. الإطفاء يرجّع السويتش الأصلي حرفياً.");
         put("MeeroGroupAppearance", "Appearance", "المظهر");
         put("MeeroGroupChat", "Chat", "المحادثة");
@@ -137,7 +137,7 @@ public final class MeeroStrings {
         put("MeeroGroupStorage", "Storage", "التخزين");
         put("MeeroHeaderEdit", "Edit", "تحرير");
         put("MeeroHeroMsg1", "Hey 👋 how are you?", "مرحبا 👋 شلونك؟");
-        put("MeeroHeroMsg2", "Did you try the new aRRaSGram design?", "هلا والله! جرّبت تصميم آراس كرام الجديد؟");
+        put("MeeroHeroMsg2", "Did you try the new Meero design?", "هلا والله! جرّبت تصميم ميرو الجديد؟");
         put("MeeroHeroMsg3", "Wooow fire 🔥", "وااو ناريي 🔥");
         put("MeeroHiddenChats", "Hidden chats", "المحادثات المخفية");
         put("MeeroHunterClearConfirm", "Delete the whole log?", "تمسح السجل كله؟");
@@ -228,7 +228,7 @@ public final class MeeroStrings {
         put("MeeroPoolWordMany", "texts", "نصوص");
         put("MeeroPoolWordOne", "text", "نص");
         put("MeeroPrivacyAccept", "Accept and continue", "موافق ومتابعة");
-        put("MeeroPrivacyBody", "MeeroX is an unofficial Telegram client.\n\n• aRRaSGram does not collect, store or transmit your personal data to any third party.\n• Your messages travel only between your device and Telegram's servers, exactly as with the official app.\n• Settings, fonts and preferences are stored locally on your device.\n• The source code is open and can be reviewed at any time.\n\nBy continuing you agree to use MeeroX at your own responsibility, and to respect Telegram's Terms of Service.", "ميرو إكس تطبيق غير رسمي لتيليجرام.\n\n• لا يجمع آراس كرام أي بيانات شخصية ولا يرسلها لأي طرف ثالث.\n• رسائلك تنتقل بين جهازك وخوادم تيليجرام فقط، تماماً كالتطبيق الرسمي.\n• الإعدادات والخطوط والتفضيلات تُحفظ محلياً على جهازك.\n• الكود المصدري مفتوح ويمكن مراجعته في أي وقت.\n\nبالمتابعة فإنك توافق على استخدام آراس كرام على مسؤوليتك الخاصة، وعلى احترام شروط خدمة تيليجرام.");
+        put("MeeroPrivacyBody", "MeeroX is an unofficial Telegram client.\n\n• MeeroX does not collect, store or transmit your personal data to any third party.\n• Your messages travel only between your device and Telegram's servers, exactly as with the official app.\n• Settings, fonts and preferences are stored locally on your device.\n• The source code is open and can be reviewed at any time.\n\nBy continuing you agree to use MeeroX at your own responsibility, and to respect Telegram's Terms of Service.", "ميرو إكس تطبيق غير رسمي لتيليجرام.\n\n• لا يجمع ميرو إكس أي بيانات شخصية ولا يرسلها لأي طرف ثالث.\n• رسائلك تنتقل بين جهازك وخوادم تيليجرام فقط، تماماً كالتطبيق الرسمي.\n• الإعدادات والخطوط والتفضيلات تُحفظ محلياً على جهازك.\n• الكود المصدري مفتوح ويمكن مراجعته في أي وقت.\n\nبالمتابعة فإنك توافق على استخدام ميرو إكس على مسؤوليتك الخاصة، وعلى احترام شروط خدمة تيليجرام.");
         put("MeeroPrivacyTitle", "Privacy Policy", "سياسة الخصوصية");
         put("MeeroRandomEmoji", "Random emoji at the end 🎲", "إيموجي عشوائي بالنهاية 🎲");
         put("MeeroReadAllChats", "Read all chats", "قراءة جميع الدردشات");
@@ -258,7 +258,7 @@ public final class MeeroStrings {
         put("MeeroSettingsTitle", "MeeroX", "MeeroX");
         put("MeeroSigContinue", "Continue at my own risk", "الاستمرار على مسؤوليتي");
         put("MeeroSigExit", "Exit now", "خروج فوري");
-        put("MeeroSigWarningText", "This copy's signature does NOT match the official MeeroX fingerprint. It may be a fake or tampered build that can steal your account.\n\nThis copy:\n%1$s\n\nOfficial fingerprint:\n%2$s\n\nInstall MeeroX only from the developer's official channel.", "توقيع هذه النسخة لا يطابق بصمة آراس كرام الرسمية. يمكن أن تكون نسخة مقرصنة أو معدّلة تسرق حسابك وبياناتك.\n\nبصمة هذه النسخة:\n%1$s\n\nالبصمة الرسمية:\n%2$s\n\nحمّل آراس كرام فقط من قناة المطور الرسمية.");
+        put("MeeroSigWarningText", "This copy's signature does NOT match the official MeeroX fingerprint. It may be a fake or tampered build that can steal your account.\n\nThis copy:\n%1$s\n\nOfficial fingerprint:\n%2$s\n\nInstall MeeroX only from the developer's official channel.", "توقيع هذه النسخة لا يطابق بصمة MeeroX الرسمية. يمكن أن تكون نسخة مقرصنة أو معدّلة تسرق حسابك وبياناتك.\n\nبصمة هذه النسخة:\n%1$s\n\nالبصمة الرسمية:\n%2$s\n\nحمّل MeeroX فقط من قناة المطور الرسمية.");
         put("MeeroSigWarningTitle", "⚠️ Warning: unofficial copy", "⚠️ تحذير: نسخة غير رسمية");
         put("MeeroSmoothPassInfo", "Pre-warms the first popup menu, the first chat you open and the first chat-list swipe after launching the app. OFF restores the exact previous start-up.", "يسخّن مسبقاً أول قائمة منبثقة وأول دردشة تفتحها وأول سحبة بقائمة الدردشات بعد تشغيل التطبيق. الإطفاء يرجّع التشغيل مثل السابق حرفياً.");
         put("MeeroStatsChartInfo", "Bars show your outgoing messages by hour of day (device local time). The tallest bar carries its value on top.", "الأعمدة تعرض رسائلك الصادرة موزعة على ساعات اليوم (بتوقيت جهازك)، وأعلى عمود مكتوبة قيمته فوقه.");
@@ -349,7 +349,7 @@ public final class MeeroStrings {
         put("MixerAccentMint", "Mint Green", "أخضر نعناعي");
         put("MixerAccentOrange", "Orange", "برتقالي");
         put("MixerAccentRed", "Red", "أحمر");
-        put("MixerAccentRose", "Meero Rose", "وردة آراس");
+        put("MixerAccentRose", "Meero Rose", "وردة ميرو");
         put("MixerAccentSky", "Sky", "سماوي");
         put("MixerAccentViolet", "Violet", "بنفسجي");
         put("MixerApplied", "Mixed theme applied — it is now listed with your themes and can be shared as a file.", "انطبق الثيم المخلوط — صار مدرجاً مع ثيماتك وتقدر تشاركه كملف.");
@@ -361,7 +361,7 @@ public final class MeeroStrings {
         put("MixerBgPaper", "Paper White", "أبيض ورقي");
         put("MixerFailed", "Could not generate the theme file. Please try again.", "ما قدرنا نولّد ملف الثيم، جرّب مرة ثانية.");
         put("MixerHeader", "Compose your theme by feel", "كوّن ثيمك على ذوقك");
-        put("MixerHubTitle", "Theme Mixer (MeeroX)", "صانع الثيمات (آراس كرام)");
+        put("MixerHubTitle", "Theme Mixer (MeeroX)", "صانع الثيمات (ميرو)");
         put("MixerInBubble", "Incoming bubble", "فقاعة الطرف الثاني");
         put("MixerInBubbleBlack", "Pure AMOLED black", "أسود AMOLED خالص");
         put("MixerInBubbleFollow", "Follow background style", "يتبع نمط الخلفية");
@@ -384,7 +384,7 @@ public final class MeeroStrings {
         put("SmartFolderUnreadChats", "Unread chats", "محادثات غير مقروءة");
         put("SmartFolderUnreadChatsRule", "Rule: contacts + non-contacts + groups with unread", "القاعدة: جهات اتصال + غير معروفين + مجموعات بها غير مقروء");
         put("SmartFoldersHeader", "One-tap folders, built from rules", "مجلدات بلمسة وحدة، مبنية بقواعد");
-        put("SmartFoldersHubTitle", "Smart Folders (MeeroX)", "المجلدات الذكيه (آراس كرام)");
+        put("SmartFoldersHubTitle", "Smart Folders (MeeroX)", "المجلدات الذكية (ميرو)");
         put("SmartFoldersInfo", "Each preset creates a real synced Telegram folder composed of rules (type, unread, muted). It appears in your chats list immediately, syncs to every device, and can be edited or removed from Telegram's regular Folders settings. Count-based rules (e.g. \"unread more than 5\") cannot live in the server engine, so they are approximated by \"unread\".", "كل قالب ينشئ مجلد تيليجرام حقيقي متزامن مركّب من قواعد (النوع، غير المقروء، المكتوم). يظهر بقائمة محادثاتك فوراً، يتزامن لكل أجهزتك، وتقدر تعدله أو تحذفه من إعدادات «المجلدات» الرسمية. القواعد العددية (مثلاً «غير مقروء أكثر من 5») ما يدعمها محرك السيرفر، فاستبدلناها بـ«غير مقروء».");
         put("SmartFoldersTitle", "Smart Folders", "المجلدات الذكية");
         put("StyleIos", "iOS", "آي أو إس");
